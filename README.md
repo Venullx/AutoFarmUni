@@ -21,6 +21,7 @@
 
    ```bash
    git clone https://github.com/Venullx/AutoFarmUni
+   cd AutoFarmUni
 
 2. **Install dependencies:**
      ```bash
