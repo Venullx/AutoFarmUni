@@ -20,8 +20,7 @@
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository URL>
-   cd <repository directory>
+   git clone https://github.com/Venullx/AutoFarmUni
 
 2. **Install dependencies:**
      ```bash
