@@ -43,7 +43,7 @@ output_folder = os.path.join(base_dir, 'images', 'screenshots', 'cropped')
 # Lista de coordenadas para cortar a imagem
 coordinates_list = [
     (82, 782, 20, 20), # symbol quest
-    (32, 574, 20, 10), # AP quest
+    (31, 582, 20, 10), # AP quest
     (375, 655, 20, 20), # Again
     (432, 771, 20, 20), # skills
     (222, 781, 20, 20), # OK
