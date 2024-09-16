@@ -46,7 +46,7 @@ def perform_actions(base_path, screen_path, device_id):
         {
             "base": os.path.join(base_path, "base6.png"),
             "screen": os.path.join(screen_path, "cropped", "slice_6.png"),
-            "clicks": [(117, 162, 1)] # JMV
+            "clicks": [(238, 488, 1)] # JMV
         },
         {
             "base": os.path.join(base_path, "base7.png"),
