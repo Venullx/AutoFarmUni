@@ -26,7 +26,7 @@ def perform_actions(base_path, screen_path, device_id):
         {
             "base": os.path.join(base_path, "base2.png"),
             "screen": os.path.join(screen_path, "cropped", "slice_2.png"),
-            "clicks": [(45, 582, 1), (323, 462, 1), (236, 527, 1), (399, 677, 1), (306, 510, 1), (308, 257, 1), (395, 614, 0)] # AP quest
+            "clicks": [(45, 582, 1), (323, 462, 1), (236, 527, 2), (60, 40, 1), (258, 592, 2),  (399, 677, 1), (306, 510, 1), (308, 257, 1), (395, 614, 0)] # AP quest
         },
         {
             "base": os.path.join(base_path, "base3.png"),
