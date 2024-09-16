@@ -41,7 +41,7 @@ def perform_actions(base_path, screen_path, device_id):
         {
             "base": os.path.join(base_path, "base5.png"),
             "screen": os.path.join(screen_path, "cropped", "slice_5.png"),
-            "clicks": [(178, 792, 3), (178, 792, 0), (178, 792, 5), (178, 792, 1), (238, 740, 3), (164, 499, 1), (241, 421, 1), (237, 505, 1), (109, 798, 2), (108,690,2)] # OK
+            "clicks": [(178, 792, 3), (178, 792, 0), (178, 792, 5), (178, 792, 1), (238, 740, 3), (164, 499, 1), (241, 421, 1), (237, 505, 1), (109, 798, 2), (108,690,2),(103,808,2)] # OK
         },
         {
             "base": os.path.join(base_path, "base6.png"),
