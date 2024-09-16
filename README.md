@@ -30,9 +30,9 @@
 ## Project Structure
 `src/`
 * `actions.py`: For comparing images and performing actions based on comparisons.
-* `click.py`: For cropping captured images.
-* `cut.py`:  For listing connected Android devices.
-* `finddevice.py` For capturing screenshots from the device.
+* `click.py`: Perform automated mouse clicks on the emulator screen based on specified coordinates.
+* `cut.py`:  For cropping captured images
+* `finddevice.py` For listing connected Android devices.
 * `matchimage.py` For comparing two images to determine if they are identical.
 * `printscreen.py`: For capturing screenshots from the device.
 
