@@ -1,7 +1,7 @@
 import os
 import time
-from matchimage import matchimage  # Certifique-se de que esta função está no mesmo diretório ou ajuste o caminho
-from click import click  # Certifique-se de que a função click está no mesmo diretório ou ajuste o caminho
+from matchimage import matchimage
+from click import click
 
 def read_device_id(file_path):
     """Lê o ID do dispositivo do arquivo de texto."""
@@ -20,7 +20,6 @@ def perform_actions(base_path, screen_path, device_id):
     base_path = os.path.abspath(base_path)  # Converte para um caminho absoluto
     screen_path = os.path.abspath(screen_path)  # Converte para um caminho absoluto
     
-    # Define os pares de imagens e as ações correspondentes (com tempos de espera)
     actions = [
         
         {
@@ -60,7 +59,12 @@ def perform_actions(base_path, screen_path, device_id):
         },
     ]
 
+    action_executed = False
+
     for action in actions:
+        if action_executed:
+            break
+
         base_image = action["base"]
         screen_image = action["screen"]
         
@@ -74,10 +78,10 @@ def perform_actions(base_path, screen_path, device_id):
         
         # Compara as imagens
         if matchimage(base_image, screen_image):
-
             for x, y, wait_time in action["clicks"]:
                 click(x, y, device_id)  # Executa o clique
                 time.sleep(wait_time)  # Aguarda o tempo especificado
+            action_executed = True  # Marca que uma ação foi executada
     
         else:
             pass
